@@ -1,0 +1,7 @@
+# Dependencias necessarias para RODAR a aplicacao
+streamlit>=1.50          # interface grafica (ja traz numpy, pandas e requests)
+plotly>=5.22             # graficos interativos
+scipy>=1.11              # leitura de audio e calculo dos biomarcadores vocais
+ultralytics>=8.2         # YOLOv8 e YOLOv8-Pose (traz PyTorch e OpenCV)
+imageio-ffmpeg>=0.5      # ffmpeg embutido: converte audio e gera video reproduzivel no navegador
+python-dotenv>=1.0       # le o arquivo .env (webhook opcional)

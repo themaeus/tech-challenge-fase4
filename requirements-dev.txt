@@ -1,0 +1,4 @@
+# Apenas para desenvolvimento: testes automatizados e figuras do relatorio
+-r requirements.txt
+pytest>=8.0
+matplotlib>=3.8

@@ -1,0 +1,200 @@
+{
+  "video": {
+    "fisio_queda": {
+      "descricao": "Perda de equilíbrio (9 s) e queda (15 s)",
+      "paciente": "P-001",
+      "eventos": [
+        {
+          "início (s)": 9.0,
+          "fim (s)": 10.0,
+          "evento": "Assimetria articular",
+          "severidade": "ATENCAO",
+          "descrição": "Diferença entre joelhos de até 43° (limite 25°) — possível compensação/dor"
+        },
+        {
+          "início (s)": 9.0,
+          "fim (s)": 9.1,
+          "evento": "Movimento brusco",
+          "severidade": "ATENCAO",
+          "descrição": "joelho esq: velocidade angular 622°/s"
+        },
+        {
+          "início (s)": 9.7,
+          "fim (s)": 11.4,
+          "evento": "Perda de equilíbrio",
+          "severidade": "ATENCAO",
+          "descrição": "Inclinação do tronco de até 38° (limite 25°)"
+        },
+        {
+          "início (s)": 11.1,
+          "fim (s)": 12.0,
+          "evento": "Assimetria articular",
+          "severidade": "ATENCAO",
+          "descrição": "Diferença entre joelhos de até 39° (limite 25°) — possível compensação/dor"
+        },
+        {
+          "início (s)": 12.0,
+          "fim (s)": 12.1,
+          "evento": "Movimento brusco",
+          "severidade": "ATENCAO",
+          "descrição": "joelho esq: velocidade angular 576°/s"
+        },
+        {
+          "início (s)": 15.5,
+          "fim (s)": 19.9,
+          "evento": "Queda",
+          "severidade": "CRITICO",
+          "descrição": "Corpo na horizontal (inclinação > 60°) após descida rápida do quadril (447 px/s). Acionar equipe imediatamente."
+        }
+      ]
+    },
+    "fisio_desequilibrio": {
+      "descricao": "Perda de equilíbrio (9 s), sem queda",
+      "paciente": "P-002",
+      "eventos": [
+        {
+          "início (s)": 9.0,
+          "fim (s)": 10.0,
+          "evento": "Assimetria articular",
+          "severidade": "ATENCAO",
+          "descrição": "Diferença entre joelhos de até 43° (limite 25°) — possível compensação/dor"
+        },
+        {
+          "início (s)": 9.0,
+          "fim (s)": 9.1,
+          "evento": "Movimento brusco",
+          "severidade": "ATENCAO",
+          "descrição": "joelho esq: velocidade angular 622°/s"
+        },
+        {
+          "início (s)": 9.7,
+          "fim (s)": 11.4,
+          "evento": "Perda de equilíbrio",
+          "severidade": "ATENCAO",
+          "descrição": "Inclinação do tronco de até 38° (limite 25°)"
+        },
+        {
+          "início (s)": 11.1,
+          "fim (s)": 12.0,
+          "evento": "Assimetria articular",
+          "severidade": "ATENCAO",
+          "descrição": "Diferença entre joelhos de até 39° (limite 25°) — possível compensação/dor"
+        },
+        {
+          "início (s)": 12.0,
+          "fim (s)": 12.1,
+          "evento": "Movimento brusco",
+          "severidade": "ATENCAO",
+          "descrição": "joelho esq: velocidade angular 576°/s"
+        }
+      ]
+    },
+    "fisio_normal": {
+      "descricao": "Sessão dentro do padrão esperado",
+      "paciente": "P-003",
+      "eventos": []
+    }
+  },
+  "audio": {
+    "consulta_fadiga_dispneia": {
+      "paciente": "P-002",
+      "features": {
+        "duracao_s": 12.0,
+        "tempo_fala_s": 4.99,
+        "proporcao_pausas": 0.584,
+        "pausas_longas_por_min": 25.0,
+        "taxa_articulacao_sil_s": 3.01,
+        "energia_media_db": -17.8,
+        "f0_medio_hz": 122.1,
+        "f0_variabilidade_st": 0.63,
+        "jitter_pct": 0.39,
+        "shimmer_pct": 6.45,
+        "hnr_db": 1.7,
+        "ruido_respiratorio_db": -17.1
+      },
+      "risk": {
+        "fadiga": 0.87,
+        "dificuldade_respiratoria": 0.88,
+        "disartria": 0.34
+      },
+      "justificativas": [
+        "muitas pausas (58% do tempo)",
+        "voz monótona (variação de F0 0.6 semitons)",
+        "ruído respiratório audível nas pausas"
+      ],
+      "alertas": [
+        "CRITICO: Fadiga vocal",
+        "CRITICO: Dificuldade respiratória na fala"
+      ]
+    },
+    "consulta_normal": {
+      "paciente": "P-003",
+      "features": {
+        "duracao_s": 12.0,
+        "tempo_fala_s": 9.24,
+        "proporcao_pausas": 0.23,
+        "pausas_longas_por_min": 0.0,
+        "taxa_articulacao_sil_s": 2.49,
+        "energia_media_db": -16.7,
+        "f0_medio_hz": 200.0,
+        "f0_variabilidade_st": 2.24,
+        "jitter_pct": 1.77,
+        "shimmer_pct": 6.46,
+        "hnr_db": 6.2,
+        "ruido_respiratorio_db": -33.8
+      },
+      "risk": {
+        "fadiga": 0.23,
+        "dificuldade_respiratoria": 0.08,
+        "disartria": 0.43
+      },
+      "justificativas": [
+        "jitter elevado (1.8%)"
+      ],
+      "alertas": []
+    }
+  },
+  "demo_resumo": {
+    "Vídeo": 11,
+    "Áudio": 2,
+    "Fusão": 1
+  },
+  "fusao": [
+    {
+      "patient_id": "P-001",
+      "VIDEO": 1.0,
+      "AUDIO": 0.0,
+      "risco": 0.8,
+      "nivel": "🔴 Crítico",
+      "modalidades_alteradas": 1
+    },
+    {
+      "patient_id": "P-002",
+      "VIDEO": 0.65,
+      "AUDIO": 1.0,
+      "risco": 0.86,
+      "nivel": "🔴 Crítico",
+      "modalidades_alteradas": 2
+    },
+    {
+      "patient_id": "P-003",
+      "VIDEO": 0.0,
+      "AUDIO": 0.0,
+      "risco": 0.0,
+      "nivel": "🟢 Baixo",
+      "modalidades_alteradas": 0
+    }
+  ],
+  "alertas_por_origem": {
+    "ATENCAO": {
+      "AUDIO": 0,
+      "FUSAO": 0,
+      "VIDEO": 10
+    },
+    "CRITICO": {
+      "AUDIO": 2,
+      "FUSAO": 1,
+      "VIDEO": 1
+    }
+  }
+}
